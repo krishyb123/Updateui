@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 interface UpdateCardProps {
   title: string;
@@ -60,11 +61,16 @@ export const UpdateCard = ({
           </div>
         )}
 
-        <div className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span>Progress</span>
-            <span>{progress}% Complete</span>
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="text-sm font-medium">
+              KPI's {progress}% Complete
+            </div>
+            <Button variant="outline" size="sm">
+              View Details
+            </Button>
           </div>
+          
           <div className="progress-bar">
             <div
               className="progress-bar-fill"
