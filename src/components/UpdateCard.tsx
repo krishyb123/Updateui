@@ -52,30 +52,29 @@ export const UpdateCard = ({
         </button>
 
         {image && (
-          <div className="relative h-48 rounded-lg overflow-hidden">
+          <div className="relative h-48 -mx-6 md:-mx-0">
             <img
               src={image}
               alt={title}
-              className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+              className="object-cover w-full h-full"
             />
           </div>
         )}
 
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="text-sm font-medium">
-              KPI's {progress}% Complete
-            </div>
-            <Button variant="outline" size="sm">
-              View Details
-            </Button>
+        <div className="flex flex-col md:flex-row items-center gap-4 justify-between">
+          <div className="text-sm font-medium w-full md:w-auto text-center md:text-left">
+            KPI's {progress}% Complete
           </div>
-          
-          <div className="progress-bar">
-            <div
-              className="progress-bar-fill"
-              style={{ width: `${progress}%` }}
-            />
+          <Button variant="outline" size="sm" className="w-full md:w-auto">
+            View Details
+          </Button>
+          <div className="w-full md:w-1/3">
+            <div className="progress-bar">
+              <div
+                className="progress-bar-fill"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
           </div>
         </div>
       </div>
