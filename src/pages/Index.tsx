@@ -20,7 +20,7 @@ const updates = [
     title: "Creating a Community Farm",
     organization: "Catalyst for Social Action",
     description: "Hi donors. The farm has been a great success so far. We have begun giving meals to children, and even set up a program to collaborate with local grocery stores to ensure fresh produce reaches those who need it most.",
-    image: "https://images.unsplash.com/photo-1618160234710-9eb591bb6c58",
+    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d",
     progress: 45,
     category: "environment",
     updateNumber: 4,
